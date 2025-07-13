@@ -64,12 +64,12 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument */
-    { netspeed_rx, "%sbps ", "wlp2s0"}, 
-    { uptime, "[ %s] ", NULL},
-	{ cpu_perc, "[ %s%%] ", NULL},
-	{ ram_perc, "[ %s%%] ", NULL},
-    { run_command, "[ %s%] ", "pamixer --get-volume"},
-	{ battery_perc, "[ %s%] ", "BAT0"},
-	{ datetime, "[%s",	"%a %b %d %r] "},
+/*    function          format          argument */
+    { netspeed_rx,      "%sbps ",       "wlp2s0"}, 
+    { uptime,           "[ %s] ",      NULL},
+	{ cpu_perc,         "[ %s%%] ",    NULL},
+	{ ram_perc,         "[ %s%%] ",    NULL},
+    { run_command,      "[ %s%] ",     "pamixer --get-volume"},
+	{ battery_perc,     "[ %s%] ",     "BAT0"},
+	{ datetime,         "[%s",	        "%a %b %d %r] "},
 };
